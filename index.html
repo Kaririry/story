@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="js svg flexbox csstransforms" lang="en" data-scrapbook-source="" data-scrapbook-create="20200214141352319">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#557b97">
+  <link rel="canonical" href="">
+  <title>northgolden</title><!-- /snippets/social-meta-tags.liquid -->
+
+
+
+  <link href="theme.scss.css" rel="stylesheet" type="text/css" media="all">
+  <meta id="in-context-paypal-metadata" data-shop-id="28645752880" data-venmo-supported="false"
+    data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="EUR">
+  <style media="all">
+    .additional-checkout-button {
+      border: 0 !important;
+      border-radius: 5px !important;
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 0 24px !important;
+      max-width: 100%;
+      min-width: 150px !important;
+      line-height: 44px !important;
+      text-align: center !important
+    }
+
+    .additional-checkout-button+.additional-checkout-button {
+      margin-left: 10px
+    }
+
+    .additional-checkout-button:last-child {
+      margin-bottom: 0
+    }
+
+    .additional-checkout-button span {
+      font-size: 14px !important
+    }
+
+    .additional-checkout-button img {
+      display: inline-block !important;
+      height: 1.3em !important;
+      margin: 0 !important;
+      vertical-align: middle !important;
+      width: auto !important
+    }
+
+    @media (max-width: 500px) {
+      .additional-checkout-button {
+        display: block;
+        margin-left: 0 !important;
+        padding: 0 10px !important;
+        width: 100%
+      }
+    }
+
+    .additional-checkout-button--apple-pay {
+      background-color: #000 !important;
+      color: #fff !important;
+      display: none;
+      font-family: -apple-system, Helvetica Neue, sans-serif !important;
+      min-width: 150px !important;
+      white-space: nowrap !important
+    }
+
+    .additional-checkout-button--apple-pay:hover,
+    .additional-checkout-button--apple-pay:active,
+    .additional-checkout-button--apple-pay:visited {
+      color: #fff !important;
+      text-decoration: none !important
+    }
+
+    .additional-checkout-button--apple-pay .additional-checkout-button__logo {
+      background: -webkit-named-image(apple-pay-logo-white) center center no-repeat !important;
+      background-size: auto 100% !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      width: 3em !important;
+      height: 1.3em !important
+    }
+
+    @media (max-width: 500px) {
+      .additional-checkout-button--apple-pay {
+        display: none
+      }
+    }
+
+    .additional-checkout-button--google-pay {
+      line-height: 0 !important;
+      padding: 0 !important;
+      border-radius: unset !important;
+      width: 80px !important
+    }
+
+    @media (max-width: 500px) {
+      .additional-checkout-button--google-pay {
+        width: 100% !important
+      }
+    }
+
+    .gpay-iframe {
+      height: 44px !important;
+      width: 100% !important;
+      cursor: pointer;
+      vertical-align: middle !important
+    }
+
+    .additional-checkout-button--paypal-express {
+      background-color: #ffc439 !important
+    }
+
+    .additional-checkout-button--paypal,
+    .additional-checkout-button--venmo {
+      vertical-align: top;
+      line-height: 0 !important;
+      padding: 0 !important
+    }
+
+    .additional-checkout-button--amazon {
+      background-color: #fad676 !important;
+      position: relative !important
+    }
+
+    .additional-checkout-button--amazon .additional-checkout-button__logo {
+      -webkit-transform: translateY(4px) !important;
+      transform: translateY(4px) !important
+    }
+
+    .additional-checkout-button--amazon .alt-payment-list-amazon-button-image {
+      max-height: none !important;
+      opacity: 0 !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important
+    }
+
+    .additional-checkout-button-visually-hidden {
+      border: 0 !important;
+      clip: rect(0, 0, 0, 0) !important;
+      clip: rect(0 0 0 0) !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: -2px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      position: absolute !important
+    }
+  </style>
+  <style id="shopify-dynamic-checkout-cart">
+    @media screen and (min-width: 750px) {
+      #dynamic-checkout-cart {
+        min-height: 50px;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      #dynamic-checkout-cart {
+        min-height: 180px;
+      }
+    }
+  </style>
+  
+</head>
+
+<body class="template-index">
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">Skip to content</a>
+
+  <div id="SearchDrawer" class="search-bar drawer drawer--top" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-bar__table">
+      <div class="search-bar__table-cell search-bar__form-wrapper">
+        <form class="search search-bar__form" action="" method="get" role="search">
+          <input class="search__input search-bar__input" type="search" name="q" value="" placeholder="Search"
+            aria-label="Search">
+          <button class="search-bar__submit search__submit btn--link" type="submit">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 37 40">
+              <path
+                d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
+              </path>
+            </svg>
+            <span class="icon__fallback-text">Submit</span>
+          </button>
+        </form>
+      </div>
+      <div class="search-bar__table-cell text-right">
+        <button type="button" class="btn--link search-bar__close js-drawer-close">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 40 40">
+            <path
+              d="M23.868 20.015L39.117 4.78c1.11-1.108 1.11-2.77 0-3.877-1.109-1.108-2.773-1.108-3.882 0L19.986 16.137 4.737.904C3.628-.204 1.965-.204.856.904c-1.11 1.108-1.11 2.77 0 3.877l15.249 15.234L.855 35.248c-1.108 1.108-1.108 2.77 0 3.877.555.554 1.248.831 1.942.831s1.386-.277 1.94-.83l15.25-15.234 15.248 15.233c.555.554 1.248.831 1.941.831s1.387-.277 1.941-.83c1.11-1.109 1.11-2.77 0-3.878L23.868 20.015z"
+              class="layer"></path>
+          </svg>
+          <span class="icon__fallback-text">Close search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <style data-shopify="">
+    .cart-popup {
+      box-shadow: 1px 1px 10px 2px rgba(232, 233, 235, 0.5);
+    }
+  </style>
+  <div class="cart-popup-wrapper cart-popup-wrapper--hidden" role="dialog" aria-modal="true"
+    aria-labelledby="CartPopupHeading" data-cart-popup-wrapper="">
+    <div class="cart-popup" data-cart-popup="" tabindex="-1">
+      <h2 id="CartPopupHeading" class="cart-popup__heading">Just added to your cart</h2>
+      <button class="cart-popup__close" aria-label="Close" data-cart-popup-close=""><svg aria-hidden="true"
+          focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 40 40">
+          <path
+            d="M23.868 20.015L39.117 4.78c1.11-1.108 1.11-2.77 0-3.877-1.109-1.108-2.773-1.108-3.882 0L19.986 16.137 4.737.904C3.628-.204 1.965-.204.856.904c-1.11 1.108-1.11 2.77 0 3.877l15.249 15.234L.855 35.248c-1.108 1.108-1.108 2.77 0 3.877.555.554 1.248.831 1.942.831s1.386-.277 1.94-.83l15.25-15.234 15.248 15.233c.555.554 1.248.831 1.941.831s1.387-.277 1.941-.83c1.11-1.109 1.11-2.77 0-3.878L23.868 20.015z"
+            class="layer"></path>
+        </svg></button>
+
+      <div class="cart-popup-item">
+        <div class="cart-popup-item__image-wrapper hide" data-cart-popup-image-wrapper="">
+          <div class="cart-popup-item__image cart-popup-item__image--placeholder" data-cart-popup-image-placeholder="">
+            <div data-placeholder-size=""></div>
+            <div class="placeholder-background placeholder-background--animation"></div>
+          </div>
+        </div>
+        <div class="cart-popup-item__description">
+          <div>
+            <div class="cart-popup-item__title" data-cart-popup-title=""></div>
+            <ul class="product-details" aria-label="Product details" data-cart-popup-product-details=""></ul>
+          </div>
+          <div class="cart-popup-item__quantity">
+            <span class="visually-hidden" data-cart-popup-quantity-label=""></span>
+            <span aria-hidden="true">Qty:</span>
+            <span aria-hidden="true" data-cart-popup-quantity=""></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="" class="cart-popup__cta-link btn btn--secondary-accent">
+        View cart (<span data-cart-popup-cart-quantity=""></span>)
+      </a>
+
+      <div class="cart-popup__dismiss">
+        <button class="cart-popup__dismiss-button text-link text-link--accent" data-cart-popup-dismiss="">
+          Continue shopping
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="shopify-section-header" class="shopify-section">
+
+    <div data-section-id="header" data-section-type="header-section">
+
+
+      <header class="site-header border-bottom logo--left" role="banner">
+        <div class="grid grid--no-gutters grid--table site-header__mobile-nav">
+
+
+          <div class="grid__item medium-up--one-quarter logo-align--left">
+
+
+            <h1 class="h2 site-header__logo">
+
+
+              <a class="site-header__logo-link" href="">northgolden</a>
+
+
+            </h1>
+
+          </div>
+
+
+          <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
+
+            <ul class="site-nav list--inline" id="SiteNav">
+
+            </ul>
+
+          </nav>
+
+
+          <div class="grid__item medium-up--one-quarter text-right site-header__icons">
+            <div class="site-header__icons-wrapper">
+              <div class="site-header__search site-header__icon">
+
+                <form action="" method="get" class="search-header search" role="search">
+                  <input class="search-header__input search__input" type="search" name="q" placeholder="Search"
+                    aria-label="Search">
+                  <button class="search-header__submit search__submit btn--link site-header__icon" type="submit">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search"
+                      viewBox="0 0 37 40">
+                      <path
+                        d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
+                      </path>
+                    </svg>
+                    <span class="icon__fallback-text">Submit</span>
+                  </button>
+                </form>
+
+              </div>
+
+              <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top"
+                aria-controls="SearchDrawer" aria-expanded="false" aria-haspopup="dialog">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search"
+                  viewBox="0 0 37 40">
+                  <path
+                    d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
+                  </path>
+                </svg>
+                <span class="icon__fallback-text">Search</span>
+              </button>
+
+
+
+              <a href="" class="site-header__icon site-header__cart">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart"
+                  viewBox="0 0 37 40">
+                  <path
+                    d="M36.5 34.8L33.3 8h-5.9C26.7 3.9 23 .8 18.5.8S10.3 3.9 9.6 8H3.7L.5 34.8c-.2 1.5.4 2.4.9 3 .5.5 1.4 1.2 3.1 1.2h28c1.3 0 2.4-.4 3.1-1.3.7-.7 1-1.8.9-2.9zm-18-30c2.2 0 4.1 1.4 4.7 3.2h-9.5c.7-1.9 2.6-3.2 4.8-3.2zM4.5 35l2.8-23h2.2v3c0 1.1.9 2 2 2s2-.9 2-2v-3h10v3c0 1.1.9 2 2 2s2-.9 2-2v-3h2.2l2.8 23h-28z">
+                  </path>
+                </svg>
+                <span class="icon__fallback-text">Cart</span>
+                <div id="CartCount" class="site-header__cart-count hide" data-cart-count-bubble="">
+                  <span data-cart-count="">0</span>
+                  <span class="icon__fallback-text medium-up--hide">items</span>
+                </div>
+              </a>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">
+          <ul id="MobileNav" class="mobile-nav">
+
+
+          </ul>
+        </nav>
+      </header>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="page-container drawer-page-content" id="PageContainer">
+
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      <!-- BEGIN content_for_index -->
+      <div id="shopify-section-hero" class="shopify-section index-section index-section--flush">
+        <div data-section-id="hero" data-section-type="hero-section">
+          <div class="hero hero--medium hero-hero hero__overlay box ratio-container js lazyloaded" id="Hero-hero"
+            data-layout="full_width"
+            data-bg="//cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_300x300.jpg?v=1575460493"
+            data-bgset="//cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_180x.jpg?v=1575460493 180w 41h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_360x.jpg?v=1575460493 360w 83h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_540x.jpg?v=1575460493 540w 124h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_720x.jpg?v=1575460493 720w 165h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_900x.jpg?v=1575460493 900w 206h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1080x.jpg?v=1575460493 1080w 248h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1296x.jpg?v=1575460493 1296w 297h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1512x.jpg?v=1575460493 1512w 347h,
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1728x.jpg?v=1575460493 1728w 396h,
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287.jpg?v=1575460493 1920w 440h"
+            data-parent-fit="cover"
+            style="background-position: center center; background-image: url(&quot;ba201905151113244076287.jpg&quot;);">
+            <div class="hero__inner">
+              <div class="page-width text-center">
+                <h2 class="h1 mega-title mega-title--large">Petua pembersihan katil sofa pelbagai fungsi</h2>
+              </div>
+            </div>
+            <picture style="display: none;">
+              <source
+                data-name="//cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_180x.jpg?v=1575460493 180w 41h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_360x.jpg?v=1575460493 360w 83h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_540x.jpg?v=1575460493 540w 124h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_720x.jpg?v=1575460493 720w 165h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_900x.jpg?v=1575460493 900w 206h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1080x.jpg?v=1575460493 1080w 248h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1296x.jpg?v=1575460493 1296w 297h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1512x.jpg?v=1575460493 1512w 347h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1728x.jpg?v=1575460493 1728w 396h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287.jpg?v=1575460493 1920w 440h"
+                sizes="2085.3658536585367px"
+                name="//cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_180x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/180w 41h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_360x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/360w 83h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_540x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/540w 124h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_720x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/720w 165h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_900x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/900w 206h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1080x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/1080w 248h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1296x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/1296w 297h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1512x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/1512w 347h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_1728x.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/1728w 396h, //cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287.jpg?v=1575460493 urn:scrapbook:download:error:https://northgolden.myshopify.com/1920w 440h">
+              <img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover"
+                sizes="2085.3658536585367px" src="ba201905151113244076287_300x300.jpg"></picture>
+          </div>
+          <noscript>
+            <div class="hero hero--medium hero__overlay"
+              style="background-image: url('//cdn.shopify.com/s/files/1/0286/4575/2880/files/ba201905151113244076287_2048x.jpg?v=1575460493'); background-position: center center;">
+            </div>
+          </noscript>
+        </div>
+
+
+      </div>
+      <div id="shopify-section-1575460635133" class="shopify-section index-section">
+        <div class="page-width rich-text">
+          <div class="grid">
+            <div class="grid__item  medium-up--two-thirds medium-up--push-one-sixth">
+
+              <div class="rich-text__heading--medium text-center">
+                <h2 class="h3">Petua pembersihan katil sofa pelbagai fungsi</h2>
+              </div>
+
+
+              <div class="rich-text__text--medium rte-setting text-center">
+                <p><span style="text-decoration: none;">1. Sofa kain kain jaket biasanya boleh
+                    dibersihkan.</span>&nbsp;<span style="text-decoration: none;">Lengan elastik boleh dibasuh di mesin
+                    basuh di rumah, dan jaket kapas atau linen yang lebih besar boleh dibawa ke
+                    pakaian.</span>&nbsp;<span style="text-decoration: none;">Apabila menyeterika sarung, perlu diingat
+                    bahawa beberapa sarung anjal mudah kering dan bebas dari besi.</span>&nbsp;<span
+                    style="text-decoration: none;">Walaupun anda mahu besi, anda harus mempertimbangkan rupa kain
+                    itu.</span>&nbsp;<span style="text-decoration: none;">Jika jaket kapas, ia tidak sesuai untuk
+                    menyeterika.</span></p>
+                <p><span style="text-decoration: none;">2. Jika ia adalah tikar alih, ia harus dihidupkan sekali
+                    seminggu sekali untuk membuat haus sama rata.</span>&nbsp;<span style="text-decoration: none;">Sofa
+                    kain umum semuanya kusyen span.</span>&nbsp;<span style="text-decoration: none;">Oleh itu, disyorkan
+                    untuk tidak duduk dalam kedudukan untuk masa yang lama, sering duduk dalam kedudukan yang berbeza,
+                    dalam kes ini, span tidak akan cacat dan sukar dilihat.</span></p>
+                <p><span style="text-decoration: none;">Apabila sofa multifungsi digunakan sebagai katil, ia sangat
+                    kuat.</span>&nbsp;<span style="text-decoration: none;">Bingkai sofa jenis ini biasanya diperbuat
+                    daripada kayu keras atau pendakap logam.</span></p>
+                <p><span style="text-decoration: none;">Keuntungan dari sofa yang tidak fleksibel yang tidak dapat
+                    dilihat adalah bahawa katil yang tidak kelihatan dari sofa multifungsi adalah sama seperti keanjalan
+                    katil biasa, kerana pengeluar menambah musim bunga ke bahagian bawah katil sofa.</span></p>
+                <p><span style="text-decoration: none;">Di ruang tamu biasa, kita tidak dapat melihat bahawa sofa boleh
+                    diletakkan di atas katil.</span>&nbsp;<span style="text-decoration: none;">Kebanyakan katil sofa di
+                    sendi perlu membuka bayonet lipatan atau tarik keluar pelongsor apabila sofa berubah menjadi katil,
+                    dan beberapa katil sofa juga dimuatkan di bahagian bawah.</span>&nbsp;<span
+                    style="text-decoration: none;">Terdapat pulleys yang memudahkan pemilik memindahkan kedudukannya,
+                    sehingga sendi-sendi kegiatan ini juga merupakan bagian utama dari katil sofa.</span></p>
+                <p><span style="text-decoration: none;">Kestabilan rangka katil sofa pelbagai fungsi mempunyai pengaruh
+                    yang besar pada masa penggunaannya.</span>&nbsp;<span style="text-decoration: none;">Biasanya
+                    terdapat dua jenis struktur keluli dan struktur kayu.</span>&nbsp;<span
+                    style="text-decoration: none;">Adalah lebih baik untuk mendedahkan lapisan asas apabila membeli,
+                    untuk melihat kualiti kayu dan kimpalan dan salutan.</span>&nbsp;<span
+                    style="text-decoration: none;">Pemprosesan.</span>&nbsp;<span style="text-decoration: none;">Sama
+                    ada ia tergelincir atau membungkus katil sofa, ia mesti lancar apabila menukar bentuk, dan bahagian
+                    selepas penukaran itu harus stabil dan kukuh.</span>&nbsp;<span style="text-decoration: none;">Di
+                    samping itu, struktur bahagian musim bunga adalah berkaitan dengan keselesaan dan ketahanan katil
+                    sofa pelbagai fungsi dan mesti saintifik dan munasabah.</span></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div><!-- END content_for_index -->
+
+    </main>
+
+    <div id="shopify-section-footer" class="shopify-section">
+      <style>
+        .site-footer__hr {
+          border-bottom: 1px solid #dcdcdc;
+        }
+
+        .site-footer p,
+        .site-footer__linklist-item a,
+        .site-footer__rte a,
+        .site-footer h4,
+        .site-footer small,
+        .site-footer__copyright-content a,
+        .site-footer__newsletter-error {
+          color: #3d4246;
+        }
+
+        .site-footer {
+          color: #3d4246;
+          background-color: #f5f5f5;
+        }
+
+        .site-footer__rte a {
+          border-bottom: 1px solid #3d4246;
+        }
+
+        .site-footer__rte a:hover,
+        .site-footer__linklist-item a:hover,
+        .site-footer__copyright-content a:hover {
+          color: #61696f;
+          border-bottom: 1px solid #61696f;
+        }
+      </style>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="page-width">
+          <div class="site-footer__content">
+            <div class="site-footer__item
+                     site-footer__item--center
+                    site-footer__item--full-width
+                    ">
+              <div class="site-footer__item-inner site-footer__item-inner--newsletter">
+                <p class="h4">Newsletter</p>
+                <div class="site-footer__newsletter
+                           site-footer__single-block--centered">
+                  <form method="post" action="" id="ContactFooter" accept-charset="UTF-8" class="contact-form"
+                    novalidate="novalidate"><input type="hidden" name="form_type" value="customer"><input type="hidden"
+                      name="utf8" value="✓">
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="input-group ">
+                      <input type="email" name="contact[email]" id="ContactFooter-email"
+                        class="input-group__field newsletter__input" value="" placeholder="Email address"
+                        aria-label="Email address" aria-required="true" required="" autocorrect="off"
+                        autocapitalize="off">
+                      <span class="input-group__btn">
+                        <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                          <span class="newsletter__submit-text--large">Subscribe</span>
+                        </button>
+                      </span>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="site-footer__hr">
+
+        <div class="page-width">
+          <div class="grid grid--no-gutters small--text-center">
+            <div class="grid__item one-half small--one-whole">
+              <div class="small--hide">
+                <small class="site-footer__copyright-content">© 2020, <a href="" title="">northgolden</a></small>
+                <small class="site-footer__copyright-content site-footer__copyright-content-powered-by"><a
+                    target="_blank" rel="nofollow noopener" href=""
+                    aria-describedby="a11y-new-window-external-message">Powered by Shopify</a></small>
+              </div>
+            </div>
+
+            <div class="grid__item one-half small--one-whole">
+
+            </div>
+            <div class="grid__item medium-up--hide">
+              <small class="site-footer__copyright-content">© 2020, <a href="" title="">northgolden</a></small>
+              <small class="site-footer__copyright-content site-footer__copyright-content--powered-by"><a
+                  target="_blank" rel="nofollow noopener" href=""
+                  aria-describedby="a11y-new-window-external-message">Powered by Shopify</a></small>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+    </div>
+
+    <div id="slideshow-info" class="visually-hidden" aria-hidden="true">Use left/right arrows to navigate the slideshow
+      or swipe left/right if using a mobile device</div>
+
+  </div>
+
+  <ul hidden="">
+    <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
+    <li id="a11y-selection-message">Press the space key then arrow keys to make a selection.</li>
+  </ul>
+
+
+  <ul hidden="true">
+    <li id="a11y-new-window-message">Opens in a new window.</li>
+    <li id="a11y-external-message">Opens external website.</li>
+    <li id="a11y-new-window-external-message">Opens external website in a new window.</li>
+  </ul>
+</body>
+
+</html>
